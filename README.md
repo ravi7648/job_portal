@@ -35,8 +35,9 @@ Open the XAMPP application and start the **Apache** and **MySQL Database server.
 - Expand the **jobs** database, here we can see the option to create table on right side.
     - Give the name of the table, say **placement** and mention *number of columns = 6*.
     - Now, mention the Name of the columns, and their respective properties as mentioned below.
+    
     | Name                  | Type          | Properties                                           |
-    | -------| :---                      |    :----:       |          :---:                                             |
+    | :---                      |    :----:       |          :---:                                             |
     | id                        | INT            | Not Null, Primary, Auto-increment, Unique      |
     | company_name  | TEXT        | Not Null                                               |
     | position              | TEXT         | Not Null                                               |   
@@ -49,6 +50,7 @@ Open the XAMPP application and start the **Apache** and **MySQL Database server.
     ```CREATE TABLE `jobs`.`placement` ( `id` INT NOT NULL UNIQUE AUTO_INCREMENT , `company_name` TEXT NOT NULL , `position` TEXT NOT NULL , `job_description` TEXT NOT NULL , `skills` TEXT NOT NULL , `ctc` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;```
     
     - Now, Create one more table called **users** with 6 columns as given below.
+    
     | Name                  | Type          | Properties                                           |
     | :---                      |    :----:       |          :---:                                             |
     | id                        | INT            | Not Null, Primary, Auto-increment, Unique      |
