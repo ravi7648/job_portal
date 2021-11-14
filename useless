@@ -1,0 +1,62 @@
+<?php
+
+$server='localhost';
+$username='root';
+$password='';
+$database='jobs';
+
+$conn=mysqli_connect($server,$username,$password,$database);
+
+if($conn->connect_error){
+    die("connection failed:".$conn->connect_error);
+
+}
+echo"";
+
+if(isset ($_POST['submit'])){
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+    $number=$_POST['phone_no'];
+    $password=$_POST['password'];
+
+    $sql = " INSERT INTO mytable1 (`Name`, `email`,'phone_no', `Password`) VALUES ('$name','$email','$number','$password')";
+    if(mysqli_query($conn,$sql)){
+        echo "Records inserted successfully.";
+    }else{
+        echo "ERROR: could not able to execute $sql." .mysqli_error($conn);
+    }
+}
+
+session_start();
+if(isset ($_POST['Login'])){
+    $email=$_POST['email'];
+    $password=$_POST['password'];
+
+    $squery="SELECT * FROM mytable1 WHERE 'email'='$email' AND 'password'='$password'";
+    $result=mysqli_qurey($conn,$query);
+    $row=mysqli_row_fetch_array($result,MYSQLI_ASSOC);
+    if(mysqli_num_rows($result)==1){
+        header("location:index.php");
+    }
+    else{
+        $error= 'emailid or password is icorrect';
+    }
+} 
+
+if(isset($_POST['job'])){
+    $cname=$_POST['Company Name'];
+    $position=$_POST['Position'];
+    $JobDescription=$_POST['JobDescription'];
+    $Skills=$_POST['Skills'];
+    $CTC=$_POST['CTC'];
+
+    $sql=" INSERT INSERT INTO jobs (`cname`, `position`, `JobDescription`, `Skills`, `CTC`) VALUES ('$cname','$position','$JobDiscription','$Skills','$CTC')";
+   if(mysqli_query($conn,$sql)){
+       echo "New Job Posted";
+   }
+   else{
+       echo "ERROR: Fail to Post a Job $sql." .mysqli_error($conn);
+   }
+}
+mysqli_close($conn);
+?>
