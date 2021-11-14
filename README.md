@@ -1,5 +1,5 @@
 # This project has been developed for students to get updates of all placement drives and hence can apply for their matching profiles.
->## To develop this project, we need to install XAMPP as to local web server and database server
+>## To develop this project, we need to install XAMPP to host local web server and database server
 1. Windows: [Download link](https://www.apachefriends.org/xampp-files/8.0.12/xampp-windows-x64-8.0.12-0-VS16-installer.exe)
 2. Mac: [Download link](https://www.apachefriends.org/xampp-files/8.0.12/xampp-osx-8.0.12-0-vm.dmg)
 3. Linux: [Download link](https://www.apachefriends.org/xampp-files/8.0.12/xampp-linux-x64-8.0.12-0-installer.run)
@@ -36,7 +36,7 @@ Open the XAMPP application and start the **Apache** and **MySQL Database server.
     - Give the name of the table, say **placement** and mention *number of columns = 6*.
     - Now, mention the Name of the columns, and their respective properties as mentioned below.
     | Name                  | Type          | Properties                                           |
-    | :---                      |    :----:       |          :---:                                             |
+    | -------| :---                      |    :----:       |          :---:                                             |
     | id                        | INT            | Not Null, Primary, Auto-increment, Unique      |
     | company_name  | TEXT        | Not Null                                               |
     | position              | TEXT         | Not Null                                               |   
