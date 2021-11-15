@@ -75,6 +75,9 @@
   <div>
   <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed">
   <div class="container-fluid">
+  <div style="width: 30px;">
+    <img src="job_logo.png" alt="Italian Trulli" height="20px" width="25px">
+  </div>
     <a class="navbar-brand" href="#"><?php echo "Admin: $name"?></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
