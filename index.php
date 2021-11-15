@@ -21,7 +21,8 @@
             box-shadow: 10px 10px 8px 10px #888888;
         }
     </style>
-    <title>Register</title>
+    <title>Login</title>
+    <link rel="icon" href="job_logo.png" type="image/icon type">
 </head>
 <body>
     <div class="container">

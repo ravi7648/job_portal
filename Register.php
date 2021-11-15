@@ -24,6 +24,7 @@
     }
   </style>
   <title>Register</title>
+  <link rel="icon" href="job_logo.png" type="image/icon type">
 </head>
 
 <body>

@@ -1,4 +1,4 @@
-# This project has been developed for students to get updates of all placement drives and hence can apply for their matching profiles.
+# Come let's make our dreams come true together!
 >## To develop this project, we need to install XAMPP to host local web server and database server
 1. Windows: [Download link](https://www.apachefriends.org/xampp-files/8.0.12/xampp-windows-x64-8.0.12-0-VS16-installer.exe)
 2. Mac: [Download link](https://www.apachefriends.org/xampp-files/8.0.12/xampp-osx-8.0.12-0-vm.dmg)

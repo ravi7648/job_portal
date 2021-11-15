@@ -19,6 +19,7 @@
   }
     </style>
     <title>Career</title>
+    <link rel="icon" href="job_logo.png" type="image/icon type">
 </head>
 <body>
 
